@@ -8,6 +8,11 @@ iOS在7.1之后安装ipa必须走https，这就意味着你必须要有https证�
 - git pages
 - dropbox(国内最近被墙了)
 
+## 操作系统
+
+由于需要使用`usr/libexec/PlistBuddy`解析info.plist,所以目前只支持mac osx系统
+
+
 ## Setup using [Bundler](http://gembundler.com/ "Bundler")
 
     $ bundle install
