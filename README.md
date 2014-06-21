@@ -16,7 +16,7 @@ iOS在7.1之后安装ipa必须走https，这就意味着你必须要有https证�
 
     $ ./start.sh
 	
-then access addree[http://127.0.0.1:9292/](http://127.0.0.1:9292/)
+then access address [http://127.0.0.1:9292/](http://127.0.0.1:9292/)
 
 ## Features
 
