@@ -16,7 +16,7 @@ class FileUpload < Sinatra::Base
     set :files, File.join(settings.public_folder, 'files')
 		set :plistfiles, File.join(settings.public_folder, 'dist/plist')
 		set :ipafiles, File.join(settings.public_folder, 'dist/ipa')
-    set :unallowed_paths, ['.', '..']
+    set :unallowed_paths, ['.', '..','dist/plist/']
   end
 
   helpers do
@@ -70,6 +70,11 @@ class FileUpload < Sinatra::Base
 				
 				Extract.do_all_in_one(path,true)
       end
+			
+			plistfiles = Dir.entries(settings.plistfiles) - settings.unallowed_paths
+			
+			Extract.create_plist_html(plistfiles)
+			
 			
       flash 'Upload successful'
     else

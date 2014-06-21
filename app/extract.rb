@@ -93,6 +93,19 @@ class Extract
 	
 		`#{cmd}`
 	end
+	
+	def self.create_plist_html(dir)
+		puts dir
+		path = "#{PLIST_PATH}/index.html"
+	
+		f=File.new(path, "w+")
+		
+		dir.each do |file|
+			f.puts("<a href='#{File.basename(file)}'>#{File.basename(file)}</a><br>") if File.basename(file)!='index.html'
+		end
+		
+		f.close
+	end
 
 end
 
