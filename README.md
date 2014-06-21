@@ -18,7 +18,7 @@ iOS在7.1之后安装ipa必须走https，这就意味着你必须要有https证�
 	
 then access address [http://127.0.0.1:9292/](http://127.0.0.1:9292/)
 
-## gitpage 上传
+## git pages 上传
 
 	./ghp_generate.sh 
 	
