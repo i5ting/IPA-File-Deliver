@@ -22,7 +22,17 @@ then access address [http://127.0.0.1:9292/](http://127.0.0.1:9292/)
 
 	./ghp_generate.sh 
 	
-首次，可能需要等几分钟才能访问的。	
+首次，可能需要等几分钟才能访问的。
+
+比如我的git是
+
+	https://github.com/i5ting/IPA-File-Deliver
+
+那么我的git pages地址是 
+	
+	https://i5ting.github.io/IPA-File-Deliver/plist/	
+	
+自己注意修改
 
 ## Features
 
