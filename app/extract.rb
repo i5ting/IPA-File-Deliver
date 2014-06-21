@@ -1,15 +1,16 @@
 #! /bin/env ruby
 #encoding=UTF-8  
 
-require 'plist'
 require 'json'
 require './app/appinfo'
 
+DIST_PATH = 'public/dist'
 IPA_PATH = 'public/dist/ipa'
 EXTRACT_PATH = 'public/dist/extract'
 PLIST_PATH = 'public/dist/plist'
 
 
+Dir.mkdir(DIST_PATH) if File.directory?(DIST_PATH) == false
 Dir.mkdir(IPA_PATH) if File.directory?(IPA_PATH) == false
 Dir.mkdir(EXTRACT_PATH) if File.directory?(EXTRACT_PATH) == false
 Dir.mkdir(PLIST_PATH) if File.directory?(PLIST_PATH) == false
